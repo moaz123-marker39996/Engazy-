@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>إنجازي | Engazy</title>
+  <meta name="description" content="موقع إنجازي لترتيب مهامك اليومية والدراسية، ابدأ الآن">
+  <meta name="author" content="Moaz">
+  <meta property="og:title" content="إنجازي | Engazy">
+  <meta property="og:description" content="موقع إنجازي لترتيب مهامك اليومية والدراسية، ابدأ الآن">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon: يتبدل حسب وضع الجهاز (فاتح / داكن) -->
+  <link rel="icon" type="image/png" href="assets/logo-dark.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="assets/logo-light.png" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Fonts and icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ov" data-a="drawer"></div>
+
+  <!-- Sidebar on wide screens, slide-in drawer on small screens -->
+  <aside class="side">
+    <div class="lg">
+      <img class="logo-big show-light" src="logo-d.png" alt="إنجازي Engazy">
+      <img class="logo-big show-dark" src="logo-light.png" alt="" aria-hidden="true">
+    </div>
+    <nav id="nav"></nav>
+    <button class="nv" data-a="theme"><i class="ic thi fa-solid fa-fw fa-moon"></i><span class="tht"></span></button>
+    <button class="nv" data-a="lang"><i class="ic fa-solid fa-fw fa-globe"></i><span id="lt"></span></button>
+  </aside>
+
+  <!-- Top bar (small screens only) -->
+  <header class="top">
+    <button class="ib" data-a="drawer" aria-label="menu"><i class="ic fa-solid fa-fw fa-bars"></i></button>
+    <span class="tl">
+      <span class="logo-icon">
+        <img class="show-light" src="logo-d.png" alt="">
+        <img class="show-dark" src="logo-light.png" alt="">
+      </span>
+      <b id="ttl"></b>
+    </span>
+    <span>
+      <button class="ib" data-a="theme" aria-label="theme"><i class="ic thi fa-solid fa-fw fa-moon"></i></button>
+      <button class="ib" data-a="lang" aria-label="language"><i class="ic fa-solid fa-fw fa-globe"></i></button>
+    </span>
+  </header>
+
+  <main><div id="mn" class="wrap"></div></main>
+  <div id="md"></div>
+  <div id="ts"></div>
+
+  <!-- Floating + button -->
+  <div id="fab">
+    <div class="fmn" id="fmn"></div>
+    <button class="fb" data-a="fab" aria-label="add"><i class="ic fa-solid fa-plus"></i></button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
